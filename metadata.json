@@ -1,0 +1,6 @@
+{
+  "name": "Olympiad Physics Lab — Mister Jo",
+  "description": "Aplikasi Latihan Olimpiade Sains Fisika Tingkat Kota khusus pengembangan Soal Nomor 6 OSK 2026 bersama Mister Jo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

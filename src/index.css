@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+@layer base {
+  :root {
+    --swiss-brown: #5B3828;
+    --deep-cocoa: #3B261E;
+    --warm-chocolate: #80563F;
+    --cream-white: #FFFDF9;
+    --swiss-milk: #F4EEE7;
+    --soft-beige: #E9DDD1;
+    --accent-gold: #C49A62;
+  }
+
+  html {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--cream-white);
+    color: var(--deep-cocoa);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .font-mono-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.formula-highlight {
+  background-color: #F4EEE7;
+  border: 1px solid #E9DDD1;
+  border-radius: 0.75rem;
+}
+
+.katex-display {
+  margin: 0.75rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
